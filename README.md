@@ -2,6 +2,16 @@
 
 Trip Attraction Analysis and Website.
 
+## Participation Part
+- 負責attraction相關的data pipeline
+- 協助建置Airflow並將其包入Docker中
+- 以下皆用Airflow來自動化流程
+1. 將資料源的資料上傳到GCS
+2. 將GCS的資料進行資料清洗，並回傳GCS跟建立BigQuery的External Table作為ODS層
+3. 在BigQuery中，正規化分出Dim/Fact Table作為STAGE層
+4. 最後依商業需求建立MART層
+
+
 ## Tech Stack
 - Python 3.12
 - ...
